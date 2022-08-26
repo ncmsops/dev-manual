@@ -47,8 +47,8 @@ Example of a label: SP13.5.0
 
 ## Image-registry
 
-TODO
+Publish a label to the Image-registry to make it available for deployment
 
 ## Deploy
 
-TODO
+Deploy according to customer specifications (hosts, gateway, payment settings, licenses) TODO

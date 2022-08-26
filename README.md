@@ -8,6 +8,6 @@
 
 ## Clean-coding blogs
 
-[Write code for easy reading](naming.md)
+[Write code for easy reading (TODO)](naming.md)
 
-[Write tests to express intent](tests.md)
+[Write tests to express intent (TODO)](tests.md)
