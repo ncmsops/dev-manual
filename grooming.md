@@ -11,7 +11,7 @@
 
 ### Input
 
-_Statement-of-intent_ from customer-contact
+_Statement-of-intent_ from customer-contact, or _Technical-constraint_ from dependencies (example- vulnerabilities).
 
 ### Output
 
