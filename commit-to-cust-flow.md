@@ -2,7 +2,7 @@
 
 ## Principles
 
-- Maintain deployment-record = snapshot of the environment on the VM
+- Maintain deployment-record = snapshot of the environment on the VM, for every deployment
 - Record test-results. They stay with the deployment-record
 - Any merge into main is good-to-go for test and deployment
 
