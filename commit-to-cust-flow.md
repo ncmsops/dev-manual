@@ -18,7 +18,6 @@ Recommended for efficiency:
       Branch-commit-->Dev-label;
       Dev-label-->Container-registry;
       Container-registry-->Dev-deploy;
-      Dev-deploy-->Good-to-go;
       PR[Pull Request]-->Review-merge;
 ```
 
@@ -31,17 +30,13 @@ Choose a name that conveys the value delivered by the branch.
 ### Dev-label
 
 Once unit-tests pass, apply a development-label.
-E.g., DV16.0.1
+E.g., BR.16.0.1
 
 Applying a label will automatically make an image in the container registry.
 
 ### Dev-deploy
 
-Test your fix and also ensure no regressions.
-
-### Good-to-go
-
-Record your test-results and known-limitations.
+Test your fix and ensure no regressions.
 
 ### Pull Request
 
