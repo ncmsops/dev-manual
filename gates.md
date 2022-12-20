@@ -83,4 +83,4 @@ Minimum linting rules:
 
 ### Outputs
 
-- Local integrated environment to test end-to-end flow on developer's desk.
+- Local integrated environment to test end-to-end flow.

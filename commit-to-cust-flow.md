@@ -1,15 +1,11 @@
 # Commit flow
 
-## Principles
-
-- Maintain deployment-record = snapshot of the environment on the VM, for every deployment
-- Record test-results. They stay with the deployment-record
-- Any merge into main is good-to-go for test and deployment
-
-Recommended for efficiency:
-
-- Frequent merge to main (max life of a branch is 3 days)
-- Automate the setup and test steps
+## Configuration management (TODO)
+   - Flow of env from devfusion to test / production
+   - Config of firewall
+   - Config of API gateway (kong)
+   - Change of env for test
+   - Change of env for debug
 
 ## Development
 
@@ -19,6 +15,8 @@ Recommended for efficiency:
       Dev-label-->Container-registry;
       Container-registry-->Dev-deploy;
       PR[Pull Request]-->Review-merge;
+      Review-merge-->Release-label;
+      Release-label-->Container-registry;
 ```
 
 ### Branch-commit
@@ -52,20 +50,22 @@ Focus on the following during the review:
 
 In case of merge-conflicts, repeat the `Dev-deploy` step above.
 
-## Release for testing
-
-```mermaid
-  graph LR;
-      Review-merge-->Release-label;
-      Release-label-->Container-registry;
-      Container-registry-->Test-deploy;
-```
-
 ### Release-label
 
 This need not happen for every merge. Only merges that are candidates for release need to be labelled
 
-Example of a release label: SP16.5.0
+Example of a release label: SP.16.5.0
+
+## Release for testing
+
+```mermaid
+  graph LR;
+      Release-labels-set-->Release-note
+      Release-note-->Integration-label
+      Integration-label-->Prep-host
+      Release-note-->Deployments
+      Container-registry-->Test-deploy;
+```
 
 ### Test-deploy
 
