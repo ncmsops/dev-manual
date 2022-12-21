@@ -1,14 +1,14 @@
 # Access control
 
 `admin-password` The system restricts access to the Numo CMS Admin tool to authenticated users.
-Authentication may be done via user-name and password, or via IDP / biometrics.
+Authentication via user-name and password, or via Identity-providers / biometrics.
 
-`identifying-info` Only a customer-business can grant role-based access to Personal Identifiable Information. 
+> User: An individual who avails the services of the platform. It excludes Admins and other personnel of the customer-business.
 
-> User: An individual who avails the services of the platform. It excludes Admins and other personnel, who are part of the customer-business.
+`identifying-info` A customer-business can grant role-based access to Personal Identifiable Information.
 
-> Personal Identifiable Information: Information that helps in identifying a person, without aid from other data-sources. 
-Includes information such as phone-numbers and addresses. Excludes information like first-name, time-of-service (which can be used for identification only by correlating with other data-sources).
+> Personal Identifiable Information: Information that helps in identifying a person, without aid from other data-sources.
+Includes information such as phone-numbers and addresses. Excludes information like first-name, time-of-service (which can't identify, unless correlated with other data-sources).
 
 `infrastructure-keys` TODO - customer can manage infra keys like firebase account, payment-gateway, etc.
 

@@ -2,8 +2,8 @@
 
 ## Incoming requests
 
-The system is as lenient as possible with incoming requests - this overall approach is detailed in this section.
-Intention is to have business continuity, even when external systems behave unexpectedly.
+The system is as lenient as possible with incoming requests.
+Intention is to have business continuity, even with unexpected behavior of external systems.
 
 Unexpected behavior includes:
 
@@ -19,7 +19,7 @@ the system ignores the error when it doesn't affect business continuity.
 
 Examples:
 
-1. When timestamps are missing, the current time is assumed
+1. When timestamps are missing, assume the current time
 1. StatusNotification is always taken with the current time, not the incoming time-stamp.
 
 Rationale: Business continuity in an environment of new chargers - deliver as good a user experience as possible, while keeping the option of reconciliation in the future.

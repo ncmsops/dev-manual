@@ -9,7 +9,7 @@
 
 ## Requirement
 
-### Input
+### Inputs
 
 _Statement-of-intent_ from customer-contact, or _Technical-constraint_ from dependencies (example- vulnerabilities).
 
@@ -24,9 +24,9 @@ _Requirement-minutes_ containing:
 
 ## CCB
 
-### Input
+### Inputs
 
-_Requirement-minutes_
+_Requirement_ minutes
 
 ### Output
 

@@ -1,1 +1,9 @@
 DevOps
+Numo
+CMS
+cyclomatic
+jsdoc
+Foucher
+Jez
+Forsgren
+Nystrom

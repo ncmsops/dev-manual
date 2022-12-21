@@ -1,6 +1,6 @@
 # Numocity developers manual
 
-We are responsive
+We're responsive!
 
 ![what-we-do](images/what-we-do.png)
 
@@ -21,7 +21,7 @@ They override external mandates, including customer requests and standards.
 
 [Compatibility](compatibility.md)
 
-[Access control and Privacy](access-control.md)
+[Access control and Privacy](access-control-privacy.md)
 
 ## Clean-coding blogs
 

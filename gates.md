@@ -1,6 +1,6 @@
 # Development gates
 
-Development gates work at the repo level to catch issues early
+Development gates work at the repository level, to catch issues early
 
 ```mermaid
   graph LR;
@@ -14,20 +14,20 @@ Development gates work at the repo level to catch issues early
 
 ### Inputs
 
-All inputs to Lint are in the repo itself:
+All inputs to Lint are in the repository itself:
 
 1. Source code and Dependencies (`package.json`)
 1. Linting rules
 
 Minimum linting rules:
 
-- [Google Javascript style guide](https://www.npmjs.com/package/eslint-config-google)
+- [Google JavaScript style guide](https://www.npmjs.com/package/eslint-config-google)
 - [ESLint recommended](https://github.com/eslint/eslint/blob/main/conf/eslint-recommended.js)
 - Maximum cyclomatic complexity in a function: `3`
 - Maximum line length: `100` characters
-- Do not require jsdoc
+- Don't require jsdoc
 
-### Outputs
+### Output
 
 - Fail on any findings + errors with line-numbers
 
@@ -40,12 +40,11 @@ Minimum linting rules:
 1. Source code and Dependencies (only production)
 1. `npm audit` with [GitHub Advisory Database](https://github.blog/2021-10-07-github-advisory-database-now-powers-npm-audit/)
 
-### Outputs
+### Output
 
 - Fail on any Vulnerabilities (Critical, Major, Average, Minor)
 
 >Zero vulnerabilities
-
 >Exception: Temporary till 3rd party release is available, discussed at [Requirement](grooming.md#Requirement) level
 
 ## No-duplicates
@@ -54,11 +53,11 @@ Minimum linting rules:
 
 - Source code and Dependencies
 
-### Outputs
+### Output
 
 - Fail on any duplication
 
->Zero duplicates of >3 lines / 45 tokens within the repo
+>Zero duplicates of >3 lines / 45 tokens within the repository
 
 ## Unit-test
 
@@ -66,21 +65,20 @@ Minimum linting rules:
 
 - Source code and Dependencies
 
-### Outputs
+### Output
 
 - Fail on any unit-test failure
 
 >100% line, branch and function coverage
-
->Exception: Where the dependency is the functionality (E.g., code-lines that pushes files to S3 bucket). Reviewed at pull-request
+>Exception: Where the dependency is the functionality (Example: code-lines that push files to S3 bucket). Reviewed at pull-request
 
 ## Integration-test
 
 ### Inputs
 
-- All service repos
+- All service repositories
 - Tests to prove functionality and catch regressions
 
-### Outputs
+### Output
 
 - List of tests executed successfully

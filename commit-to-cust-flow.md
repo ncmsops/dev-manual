@@ -1,11 +1,12 @@
 # Commit flow
 
 ## Configuration management (TODO)
-   - Flow of env from devfusion to test / production
-   - Config of firewall
-   - Config of API gateway (kong)
-   - Change of env for test
-   - Change of env for debug
+
+- Flow of environment from development to test / production
+- Configuration of firewall
+- Configuration of API gateway
+- Change of environment for test
+- Change of environment for debug
 
 ## Development
 
@@ -28,7 +29,7 @@ Choose a name that conveys the value delivered by the branch.
 ### Dev-label
 
 Once unit-tests pass, apply a development-label.
-E.g., BR.16.0.1
+Example: BR.16.0.1
 
 Applying a label will automatically make an image in the container registry.
 
@@ -52,7 +53,7 @@ In case of merge-conflicts, repeat the `Dev-deploy` step above.
 
 ### Release-label
 
-This need not happen for every merge. Only merges that are candidates for release need to be labelled
+This need not happen for every merge. Merges for release need labelling
 
 Example of a release label: SP.16.5.0
 
