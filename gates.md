@@ -79,8 +79,8 @@ Minimum linting rules:
 ### Inputs
 
 - All service repos
-- Tests, as determined by developer TODO
+- Tests to prove functionality and catch regressions
 
 ### Outputs
 
-- Local integrated environment to test end-to-end flow.
+- List of tests executed successfully

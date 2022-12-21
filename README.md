@@ -1,5 +1,9 @@
 # Numocity developers manual
 
+We are responsive
+
+![what-we-do](images/what-we-do.png)
+
 ## Development flow
 
 > Development: The activity of refining customer needs, ending in a deployment.
@@ -21,6 +25,4 @@ They override external mandates, including customer requests and standards.
 
 ## Clean-coding blogs
 
-[Write code for easy reading (TODO)](naming.md)
-
-[Write tests to express intent (TODO)](tests.md)
+[References](references.md)
