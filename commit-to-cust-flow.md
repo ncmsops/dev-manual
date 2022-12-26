@@ -35,17 +35,17 @@ Applying a label will automatically make an image in the container registry.
 
 ### Dev-deploy
 
-Test your fix and ensure no regressions.
+Test your fix on the development environment ('dev-fusion'). Find and fix regressions.
 
-### Pull Request
+### Pull-request
 
-Raise a pull request as per [the template](https://github.com/numocityadmin/nodejs-template/blob/main/.github/pull_request_template.md).
+Raise a pull request using [the template](https://github.com/numocityadmin/nodejs-template/blob/main/.github/pull_request_template.md).
 
 ### Review-merge
 
 Focus on the following during the review:
 
-1. _Readability_: Is the code understandable without the author being present? Including test-code.
+1. _Readability_: Is the code understandable without explanation? Including test-code.
 1. _Resource needs_: Will a high frequency of requests bring the server down?
 1. _Vulnerabilities_: SQL injection, CORS
 
@@ -70,6 +70,6 @@ Example of a release label: SP.16.5.0
 
 ### Test-deploy
 
-1. Generate release notes with the previous deployment as reference. Source of info: Pull-requests from all packages changed since the previous release.
-1. Setup the test system as per the release notes. Re-deploy the marked services, resulting in a deployment-record
+1. Generate release notes with the last deployment as reference. Source of info: Pull-requests from all packages changed since the last release.
+1. Setup the test system according to the release notes. Re-deploy the marked services, resulting in a deployment-record
 1. Record test-results and keep with the deployment-record.
