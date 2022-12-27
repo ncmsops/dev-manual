@@ -21,7 +21,7 @@ They override external mandates, including customer requests and standards.
 
 [Compatibility](compatibility.md)
 
-[Access control and Privacy](access-control-privacy.md)
+[Access control and Privacy](access-control-privacy.md) - Work in progress
 
 ## Clean-coding blogs
 
