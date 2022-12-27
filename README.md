@@ -8,11 +8,11 @@ We're responsive!
 
 > Development: The activity of refining customer needs, ending in a deployment.
 
-[Requirement grooming](grooming.md)
+[Requirement grooming](grooming.md) - Work in progress
 
 [Development gates](gates.md)
 
-[Commit flow](commit-to-cust-flow.md)
+[Commit flow](commit-to-cust-flow.md) - Work in progress
 
 ## Constraints
 
