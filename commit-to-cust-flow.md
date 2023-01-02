@@ -105,7 +105,10 @@ The envs which are put on secrets can be accessed on instances.
 NOTE: when the developer sends out a release note with the services to be tested along with the tag, that means the service is already built with that tag, image is created & stored in the azure registry. No need to build the services again, just deployment is enough. 
 
 Step 1: Before the Deployment make sure .env.ncms.regular of CMS-Test repository is same as .env.ncms.regular of devfusion release tag.
-Step 2: Any host-VM specific envs or payment gateway envs are mentioned in release notes are to be put into CMS-Test repository SITE_SPEC_ACCESS_TEST or PGW_KEYS_TEST secrets respectively. Testers will be given access to set the repository secrets. 
+
+Step 2: Any host-VM specific envs or payment gateway envs are mentioned in release notes are to be put into CMS-Test repository SITE_SPEC_ACCESS_TEST or PGW_KEYS_TEST secrets respectively. Testers will be given access to set the repository secrets.
+
 Step 3: In the CMS-Test repository, go to actions and select “deploy_on_test_VM” workflow. Workflow dispatch event will get triggered and manual inputs can are given under ` Run workflow `. The first input : the tag mentioned in the release note for a particular service. The second input : the service which can be chosen from the drop down menu. Click run-workflow. 
-Step 6: After every service is deployed through git-actions remove .env.ncms and .env.ncms.common from test system.
+
+Step 4: After every service is deployed through git-actions remove .env.ncms and .env.ncms.common from test system.
 
